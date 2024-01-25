@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  background-size: 100% 50%;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 991) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 246px auto;
+  gap: 20px;
+}
+
+.countainer {
+  background-color: hsl(228, 56%, 26%);
+  width: 300px;
+  height: 150px;
+  padding: 25px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  width: 25px;
+  height: 23px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 13px 0 0;
+}
+
+.logo {
+  margin: 10px auto 35px;
+}
+
+.content {
+  background-color: hsl(228, 56%, 26%);
+  width: 600px;
+  height: 100px;
+  padding: 15px;
+  margin: 60px 15px 0;
+  border-radius: 10px;
+  position: relative;
+}
+
+p {
+  color: white;
+  font-size: 14px;
+}
+.GB {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bar::before {
+  content: " 185 GB Left";
+  position: absolute;
+  width: 158px;
+  height: 50px;
+  background-color: hsl(243, 100%, 93%);
+  top: -50px;
+  right: 35px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sahm::after {
+  content: "";
+  position: absolute;
+  border-width: 24px;
+  border-style: solid;
+  border-color: transparent hsl(243, 100%, 93%) transparent transparent;
+  top: -4px;
+  right: 35px;
+}
+
+.z-gb {
+  color: white;
+}
+
+.b-gb {
+  color: white;
+}
+
+.spn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 2px;
+}
+
+.progress {
+  position: relative;
+  width: 95%;
+  height: 20px;
+  background-color: hsl(229, 57%, 11%);
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.progress .child {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+@media (max-width: 991) {
+  .bar::before {
+    content: " 185 GB Left";
+    position: absolute;
+    width: 159px;
+    height: 38px;
+    background-color: hsl(243, 100%, 93%);
+    top: 100px;
+    right: 90px;
+    padding: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 771px) {
+  body {
+    background-image: url("images/bg-mobile.png");
+  }
+  .home {
+    flex-wrap: wrap;
+    margin: 16% auto;
+  }
+
+  .sahm::after {
+    content: "";
+    position: relative;
+    border: none;
+    top: 0;
+    right: 0;
+  }
+  .bar::before {
+    content: " 185 GB Left";
+    position: absolute;
+    width: 159px;
+    height: 38px;
+    background-color: hsl(243, 100%, 93%);
+    top: 130px;
+    right: 90px;
+    padding: 22px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 28px;
+  }
+  .content {
+    background-color: hsl(228, 56%, 26%);
+    width: 617px;
+    height: 137px;
+    padding: 20px;
+    margin: 60px 15px 0;
+    border-radius: 10px;
+    position: relative;
+  }
+  p {
+    text-align: center;
+  }
+}
